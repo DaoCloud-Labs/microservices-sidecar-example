@@ -10,17 +10,14 @@ Currently integrated features:
  * configurable sidecar application
  * application on Ruby on Rails using the sidecar
 
-## Tutorial
+## 任何第三方应用接入
 
-Read more on my blog article: http://stytex.de/blog/2016/01/18/spring-cloud-sidecar-applications/
+- 暴露 `/health` 接口
+- 此接口访问成功返回 `{"status":"UP"}` 失败返回 `{"status":"DOWN"}`
 
-## resources
-
-* Spring in Action by Craig W.
-* https://github.com/Netflix
-* https://github.com/ewolff
-* http://spring.io/
-* hours of trying and reading :)
+### Example 1: Python flask 应用接入
+[app.py](https://github.com/DaoCloud-Labs/microservices-sidecar-example/blob/master/pythonApplicaion/app.py)
 
 
-## Python项目接入
+### Example 2: Ruby on Rails 应用接入
+(application_controller.rb)[https://github.com/DaoCloud-Labs/microservices-sidecar-example/blob/master/RailsApplication/app/controllers/application_controller.rb]

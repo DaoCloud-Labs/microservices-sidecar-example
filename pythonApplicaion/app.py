@@ -12,7 +12,7 @@ def hello_world():
 @app.route('/health')
 def health():
     return jsonify({
-        'status': 'up'
+        'status': 'UP'
     })
 
 
